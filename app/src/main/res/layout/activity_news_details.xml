@@ -1,34 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.shivarajpatil.mvpnewsapp.view.NewsDetailsActivity">
+    tools:context="com.shivarajpatil.mvpnewsapp.views.NewsDetailsActivity"
+    android:id="@+id/constraintLayout4">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <ImageView
+        android:src="@drawable/abc_tab_indicator_mtrl_alpha"
+        android:layout_width="0dp"
+        android:layout_height="235dp"
+        android:id="@+id/ivPhoto"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout4"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="1.0" />
 
-    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:id="@+id/tvHeadLine"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout4"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout4"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout4"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+        tools:layout_constraintBottom_creator="1" />
 
-    <include layout="@layout/content_news_details" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="245dp"
+        android:id="@+id/tvDetails"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout4"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout4"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+        android:layout_marginBottom="16dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <ImageView
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:id="@+id/imageView6"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout4"
+        android:layout_marginTop="16dp" />
 
-</android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>
