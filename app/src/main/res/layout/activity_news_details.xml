@@ -56,7 +56,7 @@
         android:layout_marginBottom="16dp" />
 
     <ImageView
-        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:src="@mipmap/ic_launcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView6"
