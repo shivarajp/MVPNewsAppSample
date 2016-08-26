@@ -11,5 +11,6 @@ public class NewsDetailsPresenter {
 
     public void loadNewsDetails(NewsDetailsModel mNewsDetailsModel) {
         EventBus.getDefault().post(mNewsDetailsModel);
+
     }
 }
