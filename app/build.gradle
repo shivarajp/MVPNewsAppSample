@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'spoon'
 
 android {
     compileSdkVersion 24
@@ -30,6 +31,10 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+}
+
+spoon {
+
 }
 
 dependencies {

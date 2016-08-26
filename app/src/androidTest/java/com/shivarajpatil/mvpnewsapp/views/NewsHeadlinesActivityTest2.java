@@ -62,7 +62,7 @@ public class NewsHeadlinesActivityTest2 {
 
         pressBack();
 
-        ViewInteraction imageView = onView(
+       /* ViewInteraction imageView = onView(
                 allOf(withId(R.id.ivNewsIcon),
                         withParent(allOf(withId(R.id.clNewsRowContainer),
                                 withParent(withId(R.id.rvNewsHeadlines)))),
@@ -74,7 +74,7 @@ public class NewsHeadlinesActivityTest2 {
                         withParent(allOf(withId(R.id.clNewsRowContainer),
                                 withParent(withId(R.id.rvNewsHeadlines)))),
                         isDisplayed()));
-        textView.check(matches(withText("Indonesia disappointed after Barack Obama delays trip ")));
+        textView.check(matches(withText("Indonesia disappointed after Barack Obama delays trip ")));*/
 
     }
 
