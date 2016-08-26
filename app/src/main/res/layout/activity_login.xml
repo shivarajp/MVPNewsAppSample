@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shivarajpatil.mvpnewsapp.views.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_login"
+        app:layout_constraintTop_toTopOf="@+id/activity_login"
+        android:layout_marginTop="128dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etPwd"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_login"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        android:layout_marginTop="32dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_login"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_login"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_login"
+        app:layout_constraintRight_toRightOf="@+id/activity_login"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_login"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="@+id/btnLogin"
+        app:layout_constraintTop_toTopOf="@+id/activity_login"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/btnLogin"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.56" />
+</android.support.constraint.ConstraintLayout>

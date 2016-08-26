@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.Espresso.pressBack;
+import static android.support.test.espresso.Espresso.registerIdlingResources;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition;
@@ -35,6 +36,8 @@ public class NewsHeadlinesActivityTest2 {
     public void newsHeadlinesActivityTest2() {
         ViewInteraction recyclerView = onView(
                 allOf(withId(R.id.rvNewsHeadlines), isDisplayed()));
+        LoginIdlingResource loginidlingResource = new LoginIdlingResource(5000);
+        registerIdlingResources(loginidlingResource);
         recyclerView.perform(actionOnItemAtPosition(0, click()));
 
         pressBack();
